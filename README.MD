@@ -1,7 +1,7 @@
 # xdocreport-sample
  
 
-[![Build Status](https://travis-ci.com/EricMuller/docxreport-sample.svg?branch=master)](https://travis-ci.com/EricMuller/docxreport-sample)[![License](http://img.shields.io/:license-mit-blue.svg)](https://opensource.org/licenses/mit-license.php)
+[![Build Status](https://travis-ci.com/EricMuller/xdocreport-sample.svg?branch=master)](https://travis-ci.com/EricMuller/xdocreport-sample)[![License](http://img.shields.io/:license-mit-blue.svg)](https://opensource.org/licenses/mit-license.php)
 
 
 xdocreport-sample is a sample docx Report genération with with XDocReport
