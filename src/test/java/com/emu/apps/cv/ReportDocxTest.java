@@ -2,12 +2,13 @@ package com.emu.apps.cv;
 
 import com.emu.apps.cv.dto.Competence;
 import fr.opensagres.xdocreport.core.XDocReportException;
+import fr.opensagres.xdocreport.core.utils.Assert;
 import fr.opensagres.xdocreport.document.IXDocReport;
 import fr.opensagres.xdocreport.document.registry.XDocReportRegistry;
 import fr.opensagres.xdocreport.template.IContext;
 import fr.opensagres.xdocreport.template.TemplateEngineKind;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
 
 import java.io.*;
 import java.util.List;
@@ -61,7 +62,7 @@ public class ReportDocxTest {
         OutputStream out = new FileOutputStream(new File("cv_out.docx"));
         report.process(context, out);
 
-        Assert.assertNotNull(out);
+        Assert.notNull(out,"Erreur");
 
     }
 
