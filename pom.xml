@@ -56,6 +56,25 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>11</release>
+                    <source>11</source>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <!-- update compiler plugin dependency on ASM for Java 11 compatibility -->
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <version>6.2</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
@@ -66,7 +85,7 @@
                 </configuration>
             </plugin>
 
-           
+
         </plugins>
 
     </build>
